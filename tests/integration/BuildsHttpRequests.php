@@ -9,11 +9,11 @@
 
 namespace Flarum\Tests\integration;
 
-use Tank\Cookies\SetCookie;
 use Flarum\Http\AccessToken;
 use Laminas\Diactoros\CallbackStream;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
+use Tank\Cookies\SetCookie;
 
 /**
  * A collection of helpers for building PSR-7 requests for integration tests.
