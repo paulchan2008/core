@@ -9,8 +9,7 @@
 
 namespace Flarum\Http;
 
-use Dflydev\FigCookies\Modifier\SameSite;
-use Dflydev\FigCookies\SetCookie;
+use Tank\Cookies\SetCookie;
 use Flarum\Foundation\Config;
 
 class CookieFactory
@@ -72,10 +71,10 @@ class CookieFactory
      * This method returns a cookie instance for use with the Set-Cookie HTTP header.
      * It will be pre-configured according to Flarum's base URL and protocol.
      *
-     * @param  string  $name
-     * @param  string  $value
-     * @param  int     $maxAge
-     * @return \Dflydev\FigCookies\SetCookie
+     * @param string $name
+     * @param null $value
+     * @param null $maxAge
+     * @return \Tank\Cookies\SetCookie
      */
     public function make($name, $value = null, $maxAge = null)
     {
@@ -106,7 +105,7 @@ class CookieFactory
      * Make an expired cookie instance.
      *
      * @param string $name
-     * @return \Dflydev\FigCookies\SetCookie
+     * @return \Tank\Cookies\SetCookie
      */
     public function expire($name)
     {
@@ -119,7 +118,7 @@ class CookieFactory
      * @param string $name
      * @return string
      */
-    public function getName($name)
+    public function getName($name): string
     {
         return $this->prefix.'_'.$name;
     }

@@ -42,9 +42,9 @@
         "php": ">=7.2",
         "axy/sourcemap": "^0.1.4",
         "components/font-awesome": "^5.14.0",
-        "dflydev/fig-cookies": "^2.0.1",
         "doctrine/dbal": "^2.7",
         "franzl/whoops-middleware": "^0.4.0",
+        "hansott/psr7-cookies": "^3.0",
         "illuminate/bus": "^6.0",
         "illuminate/cache": "^6.0",
         "illuminate/config": "^6.0",
@@ -81,6 +81,7 @@
         "symfony/event-dispatcher": "^4.3.4",
         "symfony/translation": "^4.3.4",
         "symfony/yaml": "^4.3.4",
+        "tank/cookies": "^2.1",
         "tobscure/json-api": "^0.3.0",
         "wikimedia/less.php": "^3.0"
     },
