@@ -9,6 +9,7 @@
 
 namespace Flarum\Http;
 
+use Tank\Cookies\Modifier\SameSite;
 use Tank\Cookies\SetCookie;
 use Flarum\Foundation\Config;
 
