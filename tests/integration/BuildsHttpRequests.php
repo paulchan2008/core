@@ -9,7 +9,7 @@
 
 namespace Flarum\Tests\integration;
 
-use Dflydev\FigCookies\SetCookie;
+use Tank\Cookies\SetCookie;
 use Flarum\Http\AccessToken;
 use Laminas\Diactoros\CallbackStream;
 use Psr\Http\Message\ResponseInterface as Response;
