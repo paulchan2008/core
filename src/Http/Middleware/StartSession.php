@@ -9,7 +9,6 @@
 
 namespace Flarum\Http\Middleware;
 
-use Tank\Cookies\ResponseCookies;
 use Flarum\Http\CookieFactory;
 use Illuminate\Contracts\Config\Repository as ConfigRepository;
 use Illuminate\Contracts\Session\Session;
@@ -20,6 +19,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Server\MiddlewareInterface as Middleware;
 use Psr\Http\Server\RequestHandlerInterface as Handler;
 use SessionHandlerInterface;
+use Tank\Cookies\ResponseCookies;
 
 class StartSession implements Middleware
 {

@@ -9,9 +9,9 @@
 
 namespace Flarum\Http;
 
+use Flarum\Foundation\Config;
 use Tank\Cookies\Modifier\SameSite;
 use Tank\Cookies\SetCookie;
-use Flarum\Foundation\Config;
 
 class CookieFactory
 {
