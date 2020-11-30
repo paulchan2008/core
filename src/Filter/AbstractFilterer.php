@@ -9,6 +9,8 @@
 
 namespace Flarum\Filter;
 
+use Flarum\Event\ConfigurePostsQuery;
+use Flarum\Post\Post;
 use Flarum\Search\ApplySearchParametersTrait;
 use Flarum\Search\SearchResults;
 use Flarum\User\User;
@@ -62,6 +64,12 @@ abstract class AbstractFilterer
                 $filter->filter($wrappedFilter, $filterValue, $negate);
             }
         }
+
+        // DEPRECATED BC LAYER, REMOVE BETA 16
+        if ($resource == Post::class) {
+            event(new ConfigurePostsQuery($query, $criteria->queryParams));
+        }
+        // END DEPRECATED BC LAYER
 
         $this->applySort($wrappedFilter, $criteria->sort);
         $this->applyOffset($wrappedFilter, $offset);
