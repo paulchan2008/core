@@ -72,6 +72,7 @@ import DiscussionListItem from './components/DiscussionListItem';
 import LoadingPost from './components/LoadingPost';
 import PostsUserPage from './components/PostsUserPage';
 import DiscussionPageResolver from './resolvers/DiscussionPageResolver';
+import BasicEditorDriver from './editor/BasicEditorDriver';
 import routes from './routes';
 import ForumApplication from './ForumApplication';
 
@@ -148,6 +149,7 @@ export default Object.assign(compat, {
   'components/LoadingPost': LoadingPost,
   'components/PostsUserPage': PostsUserPage,
   'resolvers/DiscussionPageResolver': DiscussionPageResolver,
+  'editors/BasicEditorDriver': BasicEditorDriver,
   routes: routes,
   ForumApplication: ForumApplication,
 });
